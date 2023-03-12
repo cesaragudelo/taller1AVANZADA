@@ -19,4 +19,4 @@ function encontrarEnergiaNegativaSables(energiaSable){
     
 }
 let energiaSables=[2,-4,-8,5,-6]
-console.log(encontrarEnergiaNegativaSables(energiaSables))
+console.log(energiaSables+" sables con energia negativa: "+encontrarEnergiaNegativaSables(energiaSables))
