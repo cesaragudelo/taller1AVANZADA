@@ -20,6 +20,7 @@ for (let index = 0; index < array.length; index++) {
     const element = array[index];
     
 }*/
+/*
 let codigosNave=[
 "ARQ2555",
 "ARQ2556",
@@ -41,23 +42,71 @@ let codigos=[
 
 
  
-function alimentosDieta(codigos,codigosNave){
-    console.log(codigos)
-    console.log(codigosNave)
+function aliDieta(codigos,codigo){
     for (let index = 0; index < codigos.length; index++) {
       let prueba= codigos[index].toString().split(":")
-      let prueba2= codigosNave[index].toString().split(" ")
-      console.log(prueba)
-      console.log(prueba2)
-      if(prueba[index]==prueba2[index]){
+      if(prueba[0]==codigo){
         return console.log(prueba[1])
-      } 
+      }     
+    }
+    }
+    aliDieta(codigos,"ARQ2557")*/
 
-      
+    let codigos=[
+      "ARQ2555:flavio nelson",
+      "ARQ2556:gato viejo",
+      "ARQ2557:carlos fernando",
+      "ARQ2558:ovidio alfonso",
+      "ARQ2559:diego castaño",
+      "ARQ2560:mauricio ramirez",
+      "ARQ2561:Sara Bel-Sun"
+  ]
+  
+  let claves=[
+      "ARQ2558",
+      "ARQ2559",
+      "ARQ2560",
+      "ARQ2555"
+  ]
+  
+  ///funcion principal
+  ///funcion principal
+   let codigosBD=[]
+  function aliDieta(codigos,claves){
+          ///sacar claves de la base de datos
+          for(let i=0;i<codigos.length;i++){
+               let clave =codigos[i].toString().split(":")
+              codigosBD.push(clave[0])
+          }
         
-    }
-    }
-
-    alimentosDieta(codigos,codigosNave)
+          for(let i=0;i<=claves.length;i++){
+              let prueba3 = codigosBD.filter(function(codigo){
+                  //console.log(codigo)
+                  
+                 let posicion =-1
+                 if  (codigo==claves[i]){
+                      codigos.filter(function(){
+                      posicion =posicion+1
+                      let posiciondelobjeto=posicion
+  
+                      let nombres=codigos[posiciondelobjeto].split(codigo+":")[1]
+                      if(nombres)
+                      console.log(codigos[posiciondelobjeto].split(codigo+":")[1])
+  
+  
+                  })
+                  
+   
+                 }   
+           
+      })
+  
+          }
+     
+  
+          }
+         
+      aliDieta(codigos,claves)
+      
 
 

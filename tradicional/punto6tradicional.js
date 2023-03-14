@@ -31,7 +31,7 @@ function getRandomInt(max) {
   
   function edadMayor(edades){
     let mayor=0;
-    let iguales=0;
+    let iguales=1;
     for (let index = 0; index < 20; index++){
         if(edades[index]== mayor){
             iguales=iguales+1;
