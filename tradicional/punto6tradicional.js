@@ -31,16 +31,23 @@ function getRandomInt(max) {
   
   function edadMayor(edades){
     let mayor=0;
-    let iguales=1;
+    let iguales=0;
     for (let index = 0; index < 20; index++){
-        if(edades[index]== mayor){
+        /*if(edades[index]== mayor){
             iguales=iguales+1;
-        }
+        }*/
         if(edades[index]>mayor){
             mayor=edades[index];
         }
-    }
-    return (console.log(edades+" "+" ---el numero mayor es: "+mayor+" las veces que se repite es: "+iguales))
+      }
+        for (let i = 0; i < 20; i++){
+          if(edades[i]==mayor){
+            iguales=iguales+1
+          }
+        }
+
+    
+    return (console.log(edades+" "+" ---el numero mayor es: "+mayor+" las veces que esta el numero mayor es: "+iguales))
   }
   console.log(edadMayor(edades()))
 
