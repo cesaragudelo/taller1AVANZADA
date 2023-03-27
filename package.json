@@ -1,5 +1,5 @@
 {
-  "name": "proyectosjs",
+  "name": "c",
   "version": "1.0.0",
   "description": "repaso de funciones ",
   "main": "index.js",
@@ -14,5 +14,13 @@
     "objetos"
   ],
   "author": "Cesar Agudelo M",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cesaragudelo/taller1AVANZADA.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cesaragudelo/taller1AVANZADA/issues"
+  },
+  "homepage": "https://github.com/cesaragudelo/taller1AVANZADA#readme"
 }
